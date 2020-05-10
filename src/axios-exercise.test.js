@@ -108,8 +108,8 @@ describe('deleteEvent', () => {
     await EventService.deleteEvent(originalEvent.id);
 
     await expect(
-      jsonServer.get(`/events/${originalEvent.id}`)
-    ).rejects.toBeTruthy();
+      jsonServer.get(`/events/${originalEvent.id}`).then(res => res.data)
+    ).rejects.toThrow('Request failed with status code 404');
 
     // Undo
     await jsonServer.post('/events', originalEvent);
