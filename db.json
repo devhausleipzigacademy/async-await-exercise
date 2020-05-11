@@ -29,13 +29,6 @@
       "location": "Basislager Coworking, Peterssteinweg 14, Leipzig"
     },
     {
-      "id": 7,
-      "title": "Refactoring 101",
-      "details": "At this event you will learn from an experienced coder the basics of making your code look cleaner, shorter, and DRY-er! Lecture taking place on the Zoom platform",
-      "date": "07/09/2020 14:00",
-      "location": "https://zoom.us/j/861156*454"
-    },
-    {
       "id": 8,
       "title": "Pizza Pizza Pizza again and again",
       "details": "Please bring pizza!",
@@ -216,6 +209,13 @@
       "details": "We'll be programming together in pairs!!",
       "date": "02/04/2020 16:00",
       "location": "Seeburgstraße 11, 04103 Leipzig"
+    },
+    {
+      "id": 7,
+      "title": "Refactoring 101",
+      "details": "At this event you will learn from an experienced coder the basics of making your code look cleaner, shorter, and DRY-er! Lecture taking place on the Zoom platform",
+      "date": "07/09/2020 14:00",
+      "location": "https://zoom.us/j/861156*454"
     }
   ]
 }
