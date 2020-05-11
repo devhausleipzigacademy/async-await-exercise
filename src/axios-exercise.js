@@ -1,41 +1,35 @@
 const axios = require('axios');
 
-function logAllEvents() {
-  return axios
-    .get('http://localhost:3000/events')
-    .then(res => {
-      console.log(res.data);
-    })
-    .catch(error => {
-      console.error(error);
-    });
+async function logAllEvents() {
+  try {
+    const res = await axios.get('http://localhost:3000/events');
+    console.log(res.data);
+  } catch (error) {
+    console.error(error);
+  }
 }
 
-function logOneEvent(id) {
-  return axios
-    .get(`http://localhost:3000/events/${id}`)
-    .then(res => {
-      console.log(res.data);
-    })
-    .catch(error => {
-      console.error(error);
-    });
+async function logOneEvent(id) {
+  try {
+    const res = await axios.get(`http://localhost:3000/events/${id}`);
+    console.log(res.data);
+  } catch (error) {
+    console.error(error);
+  }
 }
 
-function logEventsPaginated(pageIndex, numEventsPerPage) {
-  return axios
-    .get('http://localhost:3000/events', {
+async function logEventsPaginated(pageIndex, numEventsPerPage) {
+  try {
+    const res = await axios.get('http://localhost:3000/events', {
       params: {
         _limit: numEventsPerPage,
         _page: pageIndex,
       },
-    })
-    .then(res => {
-      console.log(res.data);
-    })
-    .catch(error => {
-      console.error(error);
     });
+    console.log(res.data);
+  } catch (error) {
+    console.error(error);
+  }
 }
 
 function createEvent(event) {
