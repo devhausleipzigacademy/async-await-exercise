@@ -5,7 +5,7 @@
 Serve the database by running
 
 ```bash
-yarn serve:db
+npm serve:db
 ```
 
 There's a REST resource that is being served at `/events`
@@ -31,7 +31,7 @@ If you get stuck, checkout the axios documentation at <https://github.com/axios/
 You can run the test suite by running
 
 ```
-yarn test
+npm test
 ```
 
 Make sure that the json-server is still running in the background.
