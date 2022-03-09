@@ -5,7 +5,7 @@
   "author": "Gabriel Heinrich <gabriel@codecampleipzig.de>",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.26.0",
     "json-server": "^0.16.1"
   },
   "scripts": {
@@ -14,5 +14,13 @@
   },
   "devDependencies": {
     "jest": "^26.0.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "follow-redirects@<1.14.8": ">=1.14.8",
+      "follow-redirects@<1.14.7": ">=1.14.7",
+      "axios@<=0.21.1": ">=0.21.2",
+      "axios@<0.21.1": ">=0.21.1"
+    }
   }
 }
