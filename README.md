@@ -1,6 +1,6 @@
 # Async Await Exercise
 
-## Step 1 : CRUD Methods with insomnia
+## Step 1 : CRUD Methods with HTTP Client
 
 Serve the database by running
 
@@ -9,7 +9,7 @@ npm run serve:db
 ```
 
 There's a REST resource that is being served at `/events`
-Open insomnia and create example requests for
+Open an HTTP Client file and create example requests for
 
 1. Get all events
 2. Get events with pagination using the query paramters `_limit` and `_page`
