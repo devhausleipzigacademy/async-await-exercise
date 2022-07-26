@@ -1,0 +1,15 @@
+GET http://localhost:3000/events
+
+###
+
+GET http://localhost:3000/events?_page=1&_limit=5
+
+###
+
+GET http://localhost:3000/events?_limit=1
+
+###
+
+GET http://localhost:3000/events/3
+
+
