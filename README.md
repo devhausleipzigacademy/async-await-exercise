@@ -8,8 +8,8 @@ Serve the database by running
 npm run serve:db
 ```
 
-There's a REST resource that is being served at `/events`
-Open a REST Client file and create example requests for
+There's a REST resource that is being served at `/events`.
+Read the documentation for [JSON Server](https://github.com/typicode/json-server), then open a REST Client file and create example requests for
 
 1. Get all events
 2. Get events with pagination using the query paramters `_limit` and `_page`
