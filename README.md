@@ -12,7 +12,7 @@ There's a REST resource that is being served at `/events`.
 Read the documentation for [JSON Server](https://github.com/typicode/json-server), then open a REST Client file and create example requests for
 
 1. Get all events
-2. Get events with pagination using the query paramters `_limit` and `_page`
+2. Get events with pagination using the query parameters `_limit` and `_page`
 3. Get a single event
 4. Create an event
 5. Update an event (complete)
