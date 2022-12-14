@@ -2,7 +2,7 @@ const axios = require("axios");
 
 function logAllEvents() {
 	return axios
-		.get("http://localhost:3000/events")
+		.get("http:/0.0.0.0:3000/events")
 		.then((res) => {
 			console.log(res.data);
 		})
